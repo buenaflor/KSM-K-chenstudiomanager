@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_60"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/mysql-connector-java-5.1.36.zip"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/Apache POI/poi-3.12/poi-3.12-20150511.jar"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/Apache POI/poi-3.12/poi-examples-3.12-20150511.jar"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/Apache POI/poi-3.12/poi-excelant-3.12-20150511.jar"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/Apache POI/poi-3.12/poi-ooxml-3.12-20150511.jar"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/Apache POI/poi-3.12/poi-ooxml-schemas-3.12-20150511.jar"/>
+	<classpathentry exported="true" kind="lib" path="//gstiess/5BHIF/_Systemplanung und Projektentwicklung_/Diplomprojekte/Team 02 Buenaflor, Prvulovic, Örtel, Singh/External APIs/Apache POI/poi-3.12/poi-scratchpad-3.12-20150511.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
