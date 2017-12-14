@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htl.diplomarbeit.ksm.view.RootLayoutController">
+   <top>
+      <MenuBar prefHeight="31.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+        <menus>
+            <Menu mnemonicParsing="false" onAction="#showAuftragsVerwaltung" text="Auftrag">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Neu..." />
+                  <MenuItem mnemonicParsing="false" text="Übersicht der Aufträge..." />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showRechnungserstellung" text="Rechnung">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Neu..." />
+                  <MenuItem mnemonicParsing="false" text="Übersicht der Rechnungen..." />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showPasswordField" text="Nachkalkulation" visible="false">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Bearbeiten..." />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" onAction="#showStatistik" text="Statistik">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Anzeigen..." />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Hilfe">
+            <items>
+              <MenuItem mnemonicParsing="false">
+                     <graphic>
+                        <TextField fx:id="filterField" promptText="Suchen nach" />
+                     </graphic>
+                  </MenuItem>
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Info">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Über uns" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

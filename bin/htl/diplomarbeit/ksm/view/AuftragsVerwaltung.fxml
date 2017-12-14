@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="845.0" prefWidth="1042.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htl.diplomarbeit.ksm.view.AuftragsController">
+   <children>
+      <TabPane fx:id="auftragTabPane" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="eingabeTab" text="Auftragserstellung">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="796.0" prefWidth="1042.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="37.0" text="Sie können die Adressdaten eingeben oder" />
+                        <Hyperlink layoutX="258.0" layoutY="34.0" onAction="#showStammdaten" text="aus den Stammdaten wählen..." />
+                        <Hyperlink layoutX="353.0" layoutY="211.0" onAction="#onFelderLeeren" text="Felder leeren" />
+                        <Label layoutX="30.0" layoutY="14.0" text="Auftrags-Nr.:" />
+                        <Label layoutX="455.0" layoutY="47.0" text="Datum:" />
+                        <Label layoutX="455.0" layoutY="85.0" text="Termin:" />
+                        <DatePicker fx:id="datumPicker" layoutX="497.0" layoutY="43.0" prefHeight="25.0" prefWidth="132.0" />
+                        <DatePicker fx:id="lieferdatumPicker" layoutX="498.0" layoutY="81.0" prefHeight="25.0" prefWidth="132.0" />
+                        <Separator layoutX="14.0" layoutY="41.0" orientation="VERTICAL" prefHeight="195.0" />
+                        <Separator layoutX="15.0" layoutY="234.0" prefHeight="2.0" prefWidth="427.0" />
+                        <Separator layoutX="440.0" layoutY="39.0" orientation="VERTICAL" prefHeight="195.0" prefWidth="0.0" />
+                        <Button layoutX="20.0" layoutY="732.0" mnemonicParsing="false" text="Drucken..." AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="20.0" />
+                        <ButtonBar layoutX="824.0" layoutY="725.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="18.0">
+                           <buttons>
+                              <Button mnemonicParsing="false" onAction="#handleOk" text="OK" />
+                              <Button mnemonicParsing="false" text="Abbrechen" />
+                           </buttons>
+                        </ButtonBar>
+                        <Label fx:id="auftragsIdLabel" layoutX="129.0" layoutY="14.0" text="Auftrag ID" />
+                        <RadioButton fx:id="demontageRadioButton" layoutX="454.0" layoutY="129.0" mnemonicParsing="false" text="Demontage Ja/Nein" />
+                        <RadioButton fx:id="montageRadioButton" layoutX="454.0" layoutY="158.0" mnemonicParsing="false" text="Montage Ja/Nein" />
+                        <Label layoutX="452.0" layoutY="191.0" text="Lieferanschrift:" />
+                        <TextField fx:id="lieferanschriftField" layoutX="543.0" layoutY="187.0" prefHeight="25.0" prefWidth="288.0" />
+                        <Label layoutX="28.0" layoutY="251.0" text="Edition:" />
+                        <Label layoutX="28.0" layoutY="282.0" text="Sichtseiten:" />
+                        <Label layoutX="28.0" layoutY="314.0" text="Arbeitsplatte:" />
+                        <Label layoutX="28.0" layoutY="343.0" text="Regale:" />
+                        <Label layoutX="28.0" layoutY="374.0" text="Nischenrückwand:" />
+                        <Label layoutX="28.0" layoutY="404.0" text="Backrohr:" />
+                        <Label layoutX="28.0" layoutY="433.0" text="Kühlen:" />
+                        <Label layoutX="28.0" layoutY="464.0" text="Gefrieren:" />
+                        <Label layoutX="28.0" layoutY="494.0" text="Dampfgarer:" />
+                        <Label layoutX="28.0" layoutY="525.0" text="Amatur:" />
+                        <Label layoutX="28.0" layoutY="555.0" text="Müllsystem:" />
+                        <Label layoutX="27.0" layoutY="585.0" text="Steckdosen:" />
+                        <Label layoutX="25.0" layoutY="615.0" text="Sonstiges:" />
+                        <TextArea fx:id="positionField_30" layoutX="94.0" layoutY="612.0" prefHeight="108.0" prefWidth="447.0" />
+                        <Separator layoutX="13.0" layoutY="270.0" orientation="VERTICAL" prefHeight="460.0" />
+                        <Separator layoutX="14.0" layoutY="238.0" prefWidth="990.0" />
+                        <TextField fx:id="positionField_1" layoutX="82.0" layoutY="247.0" prefHeight="25.0" prefWidth="288.0" />
+                        <TextField fx:id="positionField_4" layoutX="99.0" layoutY="278.0" prefHeight="25.0" prefWidth="271.0" />
+                        <TextField fx:id="positionField_7" layoutX="110.0" layoutY="310.0" prefHeight="25.0" prefWidth="260.0" />
+                        <TextField fx:id="positionField_10" layoutX="82.0" layoutY="340.0" prefHeight="25.0" prefWidth="288.0" />
+                        <TextField fx:id="positionField_13" layoutX="141.0" layoutY="370.0" prefHeight="25.0" prefWidth="229.0" />
+                        <TextField fx:id="positionField_16" layoutX="99.0" layoutY="400.0" prefHeight="25.0" prefWidth="271.0" />
+                        <TextField fx:id="positionField_19" layoutX="82.0" layoutY="429.0" prefHeight="25.0" prefWidth="288.0" />
+                        <TextField fx:id="positionField_22" layoutX="98.0" layoutY="460.0" prefHeight="25.0" prefWidth="271.0" />
+                        <TextField fx:id="positionField_25" layoutX="110.0" layoutY="490.0" prefHeight="25.0" prefWidth="259.0" />
+                        <TextField fx:id="positionField_27" layoutX="88.0" layoutY="521.0" prefHeight="25.0" prefWidth="281.0" />
+                        <TextField fx:id="positionField_28" layoutX="99.0" layoutY="551.0" prefHeight="25.0" prefWidth="270.0" />
+                        <TextField fx:id="positionField_29" layoutX="110.0" layoutY="581.0" prefHeight="25.0" prefWidth="257.0" />
+                        <Label layoutX="404.0" layoutY="252.0" text="Front:" />
+                        <Label layoutX="404.0" layoutY="283.0" text="Griff:" />
+                        <Label layoutX="404.0" layoutY="344.0" text="Rollo:" />
+                        <Label layoutX="404.0" layoutY="373.0" text="Kochfeld:" />
+                        <Label layoutX="404.0" layoutY="404.0" text="Geschirrspüler:" />
+                        <Label layoutX="404.0" layoutY="434.0" text="Mikrowelle:" />
+                        <Label layoutX="404.0" layoutY="463.0" text="Spüle:" />
+                        <Label layoutX="404.0" layoutY="494.0" text="Beleuchtung:" />
+                        <RadioButton fx:id="stromanschlussRadioButton" layoutX="401.0" layoutY="542.0" mnemonicParsing="false" text="Stromanschluss" />
+                        <RadioButton fx:id="wasseranschlussRadioButton" layoutX="400.0" layoutY="583.0" mnemonicParsing="false" text="Wasseranschluss" />
+                        <TextField fx:id="positionField_2" layoutX="446.0" layoutY="248.0" prefHeight="25.0" prefWidth="230.0" />
+                        <TextField fx:id="positionField_5" layoutX="446.0" layoutY="278.0" prefHeight="25.0" prefWidth="229.0" />
+                        <TextField fx:id="positionField_11" layoutX="446.0" layoutY="340.0" prefHeight="25.0" prefWidth="229.0" />
+                        <TextField fx:id="positionField_14" layoutX="468.0" layoutY="369.0" prefHeight="25.0" prefWidth="207.0" />
+                        <TextField fx:id="positionField_17" layoutX="491.0" layoutY="400.0" prefHeight="25.0" prefWidth="184.0" />
+                        <TextField fx:id="positionField_20" layoutX="476.0" layoutY="430.0" prefHeight="25.0" prefWidth="199.0" />
+                        <TextField fx:id="positionField_23" layoutX="448.0" layoutY="459.0" prefHeight="25.0" prefWidth="226.0" />
+                        <TextField fx:id="positionField_26" layoutX="484.0" layoutY="490.0" prefHeight="25.0" prefWidth="189.0" />
+                        <Label layoutX="703.0" layoutY="249.0" text="Korpus:" />
+                        <Label layoutX="703.0" layoutY="280.0" text="Glassschrank:" />
+                        <Label layoutX="703.0" layoutY="310.0" text="Arbeitshöhe:" />
+                        <Label layoutX="703.0" layoutY="372.0" text="Ladenausführung:" />
+                        <Label layoutX="703.0" layoutY="403.0" text="Dunstabzug:" />
+                        <Label layoutX="703.0" layoutY="433.0" text="Filter:" />
+                        <Label layoutX="703.0" layoutY="462.0" text="Wärmeschublade:" />
+                        <TextField fx:id="positionField_3" layoutX="745.0" layoutY="245.0" prefHeight="25.0" prefWidth="250.0" />
+                        <TextField fx:id="positionField_6" layoutX="783.0" layoutY="275.0" prefHeight="25.0" prefWidth="211.0" />
+                        <TextField fx:id="positionField_9" layoutX="776.0" layoutY="306.0" prefHeight="25.0" prefWidth="217.0" />
+                        <TextField fx:id="positionField_15" layoutX="803.0" layoutY="368.0" prefHeight="25.0" prefWidth="190.0" />
+                        <TextField fx:id="positionField_18" layoutX="778.0" layoutY="399.0" prefHeight="25.0" prefWidth="214.0" />
+                        <TextField fx:id="positionField_21" layoutX="743.0" layoutY="429.0" prefHeight="25.0" prefWidth="249.0" />
+                        <TextField fx:id="positionField_24" layoutX="804.0" layoutY="458.0" prefHeight="25.0" prefWidth="188.0" />
+                        <Separator layoutX="1001.0" layoutY="238.0" orientation="VERTICAL" prefHeight="460.0" />
+                        <Separator layoutX="559.0" layoutY="526.0" orientation="VERTICAL" prefHeight="205.0" prefWidth="6.0" />
+                        <Separator layoutX="561.0" layoutY="525.0" prefWidth="441.0" />
+                        <Label layoutX="596.0" layoutY="639.0" text="1. Anzahlung:" />
+                        <TextField fx:id="ersteAnzahlungFieldProzent" layoutX="686.0" layoutY="635.0" onKeyPressed="#setAnzahlung1" prefHeight="25.0" prefWidth="36.0" />
+                        <Label layoutX="596.0" layoutY="673.0" text="2. Anzahlung:" />
+                        <Label layoutX="597.0" layoutY="710.0" text="Restzahlung:" />
+                        <TextField fx:id="ersteAnzahlungField" disable="true" layoutX="742.0" layoutY="635.0" prefHeight="25.0" prefWidth="93.0" visible="false" />
+                        <Label layoutX="725.0" layoutY="639.0" text="\%" />
+                        <TextField fx:id="zweiteAnzahlungFieldProzent" layoutX="686.0" layoutY="669.0" onKeyPressed="#setAnzahlung2" prefHeight="25.0" prefWidth="36.0" />
+                        <TextField fx:id="zweiteAnzahlungField" disable="true" layoutX="742.0" layoutY="669.0" prefHeight="25.0" prefWidth="93.0" visible="false" />
+                        <Label layoutX="725.0" layoutY="673.0" text="\%" />
+                        <Label fx:id="erstAnzahlungLabel" layoutX="763.0" layoutY="639.0" text="0,00" />
+                        <Label fx:id="zweitAnzahlungLabel" layoutX="763.0" layoutY="673.0" text="0,00" />
+                        <Label fx:id="restzahlungLabel" layoutX="763.0" layoutY="710.0" text="0,00" />
+                        <Label layoutX="596.0" layoutY="543.0" text="Preis:" />
+                        <TextField fx:id="nettoPreisField" layoutX="654.0" layoutY="538.0" prefHeight="25.0" prefWidth="106.0" />
+                        <Label layoutX="644.0" layoutY="542.0" text="€" />
+                        <Label layoutX="596.0" layoutY="572.0" text="20% Ust" />
+                        <Label layoutX="644.0" layoutY="572.0" text="€" />
+                        <Label fx:id="umsatzsteuerBetragLabel" layoutX="654.0" layoutY="572.0" text="0,00" />
+                        <Label layoutX="595.0" layoutY="596.0" text="Gesamtpreis:" />
+                        <Label layoutX="677.0" layoutY="596.0" text="€" />
+                        <Label fx:id="gesamtPreisLabel" layoutX="688.0" layoutY="596.0" text="0,00" />
+                        <Separator layoutX="592.0" layoutY="591.0" prefWidth="170.0" />
+                        <Separator layoutX="14.0" layoutY="729.0" prefWidth="988.0" />
+                        <Hyperlink layoutX="898.0" layoutY="211.0" onAction="#onAlleFelderLeeren" text="Alle Felder leeren" />
+                        <Label layoutX="403.0" layoutY="314.0" prefHeight="17.0" prefWidth="52.0" text="AP-Kante" />
+                        <TextField fx:id="positionField_8" layoutX="462.0" layoutY="309.0" prefHeight="25.0" prefWidth="214.0" />
+                        <Label layoutX="27.0" layoutY="68.0" text="Kundennummer:" />
+                        <Label layoutX="26.0" layoutY="98.0" text="Anrede" />
+                        <Label layoutX="26.0" layoutY="128.0" text="Vor- /Nachname:" />
+                        <Label layoutX="26.0" layoutY="158.0" text="Straße:" />
+                        <Label layoutX="26.0" layoutY="190.0" text="Land / PLZ / Ort:" />
+                        <TextField fx:id="kundennrField" layoutX="141.0" layoutY="64.0" prefHeight="25.0" prefWidth="149.0" />
+                        <TextField fx:id="vornameField" layoutX="141.0" layoutY="124.0" prefHeight="25.0" prefWidth="106.0" />
+                        <TextField fx:id="nachnameField" layoutX="251.0" layoutY="124.0" prefHeight="25.0" prefWidth="176.0" />
+                        <TextField fx:id="strasseField" layoutX="141.0" layoutY="154.0" prefHeight="25.0" prefWidth="286.0" />
+                        <TextField fx:id="plzField" layoutX="213.0" layoutY="186.0" prefHeight="25.0" prefWidth="72.0" />
+                        <TextField fx:id="ortField" layoutX="288.0" layoutY="186.0" prefHeight="25.0" prefWidth="139.0" />
+                        <ComboBox fx:id="anredeBox" layoutX="141.0" layoutY="94.0" prefHeight="25.0" prefWidth="103.0" />
+                        <ComboBox layoutX="141.0" layoutY="186.0" prefHeight="25.0" prefWidth="69.0" promptText="AT" />
+                        <Label layoutX="704.0" layoutY="342.0" text="Barplatte:" />
+                        <TextField fx:id="positionField_12" layoutX="761.0" layoutY="338.0" prefHeight="25.0" prefWidth="232.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+            <Tab fx:id="uebersichtTab" text="Übersicht">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="auftragsTable" layoutX="366.0" layoutY="286.0" prefHeight="771.0" prefWidth="1042.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="dateColumn" text="Datum" />
+                              <TableColumn fx:id="terminColumn" prefWidth="75.0" text="Termin" />
+                            <TableColumn fx:id="orderIdColumn" prefWidth="88.0" text="Auftrags-Nr." />
+                              <TableColumn fx:id="customerIdColumn" prefWidth="75.0" text="Kunden-Nr." />
+                              <TableColumn fx:id="firstNameColumn" prefWidth="100.0" text="Vorname" />
+                              <TableColumn fx:id="lastNameColumn" prefWidth="100.0" text="Nachname" />
+                              <TableColumn fx:id="phoneNumberColumn" prefWidth="121.0" text="Telefon" />
+                              <TableColumn fx:id="eMailColumn" prefWidth="179.0" text="E-Mail" />
+                              <TableColumn fx:id="deliveryAddressColumn" prefWidth="124.0" text="Lieferanschrift" />
+                              <TableColumn fx:id="priceColumn" prefWidth="99.0" text="Gesamtpreis" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

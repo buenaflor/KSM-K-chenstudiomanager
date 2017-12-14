@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1020.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htl.diplomarbeit.ksm.view.NachKalkulationController">
+   <children>
+      <TableView fx:id="nachkalk_table" layoutY="390.0" prefHeight="336.0" prefWidth="1020.0" >
+         <columns>
+            <TableColumn prefWidth="84.0" text="Bestelldatum" />
+            <TableColumn prefWidth="66.0" text="Lieferant" />
+            <TableColumn prefWidth="75.0" text="Ware" />
+            <TableColumn prefWidth="75.0" text="Netto Einkauf" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label layoutX="26.0" layoutY="72.0" text="Sie können die Adressdaten eingeben oder" />
+      <Hyperlink layoutX="254.0" layoutY="69.0" text="aus den Stammdaten wählen..." />
+      <Label layoutX="24.0" layoutY="141.0" text="Telefon" />
+      <TextField fx:id="nachnameField" layoutX="138.0" layoutY="138.0" prefHeight="25.0" prefWidth="287.0" />
+      <Label layoutX="24.0" layoutY="177.0" prefHeight="17.0" prefWidth="64.0" text="Anschrift" />
+      <TextField fx:id="strasseField" layoutX="138.0" layoutY="173.0" prefHeight="25.0" prefWidth="288.0" />
+      <Hyperlink layoutX="350.0" layoutY="228.0" text="Felder leeren" />
+      <Label layoutX="26.0" layoutY="50.0" text="Auftrags-Nr.:" />
+      <Separator layoutX="10.0" layoutY="77.0" orientation="VERTICAL" prefHeight="175.0" />
+      <Separator layoutX="10.0" layoutY="255.0" prefHeight="2.0" prefWidth="427.0" />
+      <Separator layoutX="435.0" layoutY="77.0" orientation="VERTICAL" prefHeight="175.0" prefWidth="0.0" />
+      <Label layoutX="26.0" layoutY="108.0" text="Kunde" />
+      <TextField fx:id="kundennrField" editable="false" layoutX="138.0" layoutY="104.0" prefHeight="25.0" prefWidth="147.0" />
+      <Label layoutX="24.0" layoutY="207.0" prefHeight="17.0" prefWidth="64.0" text="E-Mail" />
+      <TextField layoutX="137.0" layoutY="203.0" prefHeight="25.0" prefWidth="289.0" />
+      <Label layoutX="125.0" layoutY="50.0" text="Auftrag ID" />
+      <Label layoutX="12.0" layoutY="268.0" text="Auftrag:" />
+      <TextField layoutX="113.0" layoutY="264.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="12.0" layoutY="304.0" text="Datum Auftrag:" />
+      <Label layoutX="13.0" layoutY="338.0" text="Datum Lieferung:" />
+      <DatePicker fx:id="datumPicker" layoutX="114.0" layoutY="300.0" prefHeight="25.0" prefWidth="127.0" />
+      <DatePicker fx:id="datumPicker1" layoutX="114.0" layoutY="336.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="504.0" layoutY="72.0" text="Aufgliederung" />
+      <Label layoutX="715.0" layoutY="71.0" text="VK SUMME NET INSGESAMT" />
+      <Label layoutX="173.0" layoutY="751.0" text="VK Netto:" />
+      <Label layoutX="174.0" layoutY="813.0" text="EK Netto:" />
+      <Label layoutX="181.0" layoutY="859.0" text="Ertrag:" />
+      <TextField layoutX="322.0" layoutY="842.0" prefHeight="50.0" prefWidth="134.0" />
+      <TextField layoutX="322.0" layoutY="788.0" prefHeight="50.0" prefWidth="134.0" />
+      <TextField layoutX="322.0" layoutY="734.0" prefHeight="50.0" prefWidth="134.0" />
+      <TextField layoutX="475.0" layoutY="116.0" prefHeight="50.0" prefWidth="134.0" />
+      <TextField layoutX="724.0" layoutY="113.0" prefHeight="50.0" prefWidth="134.0" />
+      <Button fx:id="addLine_btn" layoutX="959.0" layoutY="347.0" mnemonicParsing="false" onAction="#addLine" opacity="0.2" prefHeight="40.0" prefWidth="55.0" />
+      <Label layoutX="972.0" layoutY="335.0" prefHeight="3.0" prefWidth="34.0" text="+" textAlignment="JUSTIFY">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htl.diplomarbeit.ksm.view.StammdatenController">
+   <children>
+      <TableView fx:id="sortedTable" layoutY="36.0" prefHeight="364.0" prefWidth="300.0">
+        <columns>
+          <TableColumn fx:id="kundennrColumn" prefWidth="75.0" text="Kunden-Nr." />
+          <TableColumn fx:id="vornameColumn" prefWidth="111.0" text="Vorname" />
+            <TableColumn fx:id="nachnameColumn" prefWidth="113.0" text="Nachname" />
+        </columns>
+      </TableView>
+      <Label layoutX="6.0" layoutY="11.0" text="Filtersuche:" />
+      <TextField fx:id="filterField" layoutX="77.0" layoutY="7.0" prefHeight="25.0" prefWidth="218.0" />
+   </children>
+</AnchorPane>
